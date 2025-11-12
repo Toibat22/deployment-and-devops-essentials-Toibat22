@@ -71,7 +71,7 @@ export const postService = {
 
   // Add Comment
   addComment: async (postId, commentData) => {
-    const response = await api.post(`/posts/${postId}`/comments, commentData);
+    const response = await api.post(`/posts/${postId}/comments`, commentData);
     return response.data;
   },
 
